@@ -1,0 +1,14 @@
+.conteiner_select {
+  width: 100%;
+}
+.conteiner_select h1 {
+  width: 80%;
+  font-size: 2em;
+  font-weight: 800;
+  padding: 10px 0;
+  text-align: center;
+  color: #4b0082;
+  background-color: white;
+  border-radius: 15px;
+  margin: 15px auto;
+}

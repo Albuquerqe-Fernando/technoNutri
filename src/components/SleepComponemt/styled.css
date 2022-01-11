@@ -1,0 +1,22 @@
+.conteiner_sleep {
+  color: white;
+  padding: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.conteiner_sleep p + p {
+  border: 1px solid white;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+@media screen and (max-width: 500px) {
+  .conteiner_sleep p + p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .conteiner_sleep p + p {
+    font-size: 0.6em;
+  }
+}

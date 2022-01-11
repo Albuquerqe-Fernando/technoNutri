@@ -1,0 +1,101 @@
+.conteiner_ways {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #4b0082;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+.conteiner_ways section {
+  max-width: 1300px;
+  padding: 20px;
+  background-color: #4b0082;
+}
+.anuncio_mobile_ways {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  background-color: white;
+}
+
+.ways {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ways img {
+  width: 40%;
+  height: 25vh;
+  border-radius: 10px;
+}
+.ways:last-child {
+  flex-direction: row-reverse;
+}
+.ways div {
+  width: 55%;
+  text-align: center;
+}
+.ways h1 {
+  font-size: 2em;
+  color: white;
+}
+.ways a {
+  width: 100%;
+  font-size: 1.4em;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.ways a h2 {
+  max-width: 45%;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 990px) {
+  .ways h1 {
+    font-size: 1.5em;
+  }
+  .ways a h2 {
+    max-width: 60%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .ways h1 {
+    font-size: 1em;
+  }
+  .ways a h2 {
+    max-width: 60%;
+    font-size: 0.65em;
+  }
+  .ways .anuncio_mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ways {
+    display: block;
+    padding: 10px;
+  }
+  .ways img {
+    width: 100%;
+  }
+  .ways div {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .ways a h2 {
+    max-width: 70%;
+    font-size: 0.65em;
+  }
+}

@@ -1,0 +1,26 @@
+.private_h1 {
+  font-size: 4em;
+  margin: 40px auto;
+  text-align: center;
+}
+.section_private {
+  width: 90%;
+  padding: 15px;
+  margin: 0 auto;
+}
+.section_private h1 {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.section_private h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.section_private h3 {
+  line-height: 30px;
+  font-size: 0.9em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}

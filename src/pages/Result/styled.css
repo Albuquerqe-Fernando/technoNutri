@@ -1,0 +1,93 @@
+.conteiner_result {
+  width: 100%;
+  background-color: #4b0082;
+  padding-top: 15px;
+}
+.result {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #4b0082;
+  margin: 0 auto;
+  text-align: center;
+  padding: 7px;
+}
+.anuncio_result {
+  width: 80%;
+  height: 40px;
+  margin: 8px auto;
+  background-color: white;
+}
+.title_result {
+  width: 80%;
+  padding: 10px 0;
+  text-align: center;
+  color: #4b0082;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.data_result {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.data_result h2 {
+  margin: 0 5px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.button_download {
+  width: 30%;
+  padding: 10px;
+  margin: 15px auto;
+  font-style: italic;
+  font-weight: 800;
+  border-radius: 15px;
+  color: #4b0082;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icon {
+  color: #4b0082;
+
+  font-size: 2em;
+}
+@media screen and (max-width: 790px) {
+  .button_download {
+    font-weight: bold;
+  }
+  .button_download h1 {
+    font-weight: 900;
+    font-size: 1.5em;
+  }
+  .icon {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title_result {
+    width: 95%;
+  }
+  .title_result h1 {
+    font-size: 1.3em;
+  }
+  .data_result h2 {
+    font-size: 0.7em;
+    display: flex;
+  }
+  .button_download {
+    width: 50%;
+  }
+  .button_download h1 {
+    font-size: 1em;
+  }
+}

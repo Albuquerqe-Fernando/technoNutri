@@ -1,0 +1,228 @@
+.conteiner_form {
+  width: 100%;
+  background-color: #4b0082;
+  margin: 0 auto;
+}
+.title_form {
+  width: 90%;
+  font-size: 1.5em;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: #4b0082;
+  text-align: center;
+}
+.anuncio_form {
+  width: 90%;
+  height: 50px;
+  background-color: white;
+  margin: 15px auto;
+}
+.conteiner_data {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  margin: 0 auto;
+}
+.conteiner_data main {
+  padding: 10px;
+  background-color: #4b0082;
+  width: 70%;
+  max-width: 900px;
+}
+
+.conteiner_data .inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 25px;
+}
+.conteiner_data form h3 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 10px;
+}
+.conteiner_data form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.conteiner_data form label {
+  margin: 15px;
+}
+.conteiner_data form input:focus {
+  border: 1px solid #a53af1;
+  border-style: none;
+}
+.conteiner_data form button {
+  width: 50%;
+  height: 4vh;
+  margin: 0 25%;
+  border-radius: 10px;
+  font-size: 3vh;
+  color: #4b0082;
+  font-style: italic;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner_data form button:hover {
+  border: 1px solid white;
+  background-color: #8b4cb8;
+}
+
+.conteiner_sleep {
+  width: 90%;
+  margin-bottom: 25px;
+  text-align: center;
+  margin: 20px auto;
+}
+.conteiner_sleep h2 {
+  font-size: 1.2em;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+.conteiner_sleep h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: white;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
+.conteiner_sleep select {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #4b0082;
+}
+.conteiner_sleep option {
+  font-size: 20px;
+  background-color: #4b0082;
+  color: white;
+  font-weight: bold;
+}
+.average_calorie {
+  width: 90%;
+  margin-bottom: 25px;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+}
+.average_calorie h1 {
+  font-size: 1.5em;
+  margin: 20px auto;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: #4b0082;
+}
+.average_calorie select {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #4b0082;
+}
+.average_calorie label {
+  width: 100%;
+  display: flex;
+}
+.average_calorie label h4 {
+  width: 50%;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 15px;
+}
+
+.average_calorie option {
+  font-size: 20px;
+  background-color: #4b0082;
+  color: white;
+  font-weight: bold;
+}
+@media screen and (max-width: 750px) {
+  .conteiner_data main {
+    width: 100%;
+    padding: 10px 25px;
+  }
+  .average_calorie label h4 {
+    font-size: 1.2em;
+  }
+  .average_calorie select {
+    font-size: 16px;
+  }
+  .conteiner_sleep h4 {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title_form {
+    font-size: 1.3em;
+  }
+  .conteiner_data form label {
+    margin: 0;
+  }
+  .conteiner_data .inputs {
+    display: block;
+  }
+  .average_calorie {
+    width: 100%;
+  }
+  .average_calorie h1 {
+    width: 100%;
+  }
+  .average_calorie label {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .average_calorie label h4 {
+    width: 100%;
+  }
+  .average_calorie select {
+    width: 90%;
+    margin-left: 0;
+    font-size: 1em;
+  }
+  .conteiner_sleep {
+    width: 100%;
+    margin: 5px auto;
+  }
+  .conteiner_sleep h2 {
+    font-size: 0.8em;
+  }
+  .conteiner_sleep h4 {
+    font-size: 0.6em;
+  }
+}
