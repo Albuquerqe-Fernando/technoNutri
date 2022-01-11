@@ -1,3 +1,4 @@
+import React from 'react';
 import { vegetables } from './nutritionalTable';
 
 export const optionVegetables = vegetables.map((vegetable, ind) => {

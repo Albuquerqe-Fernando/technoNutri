@@ -1,3 +1,4 @@
+import React from 'react';
 import { proteins } from './nutritionalTable';
 
 export const optionproteins = proteins.map((protein, ind) => {

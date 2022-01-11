@@ -1,3 +1,4 @@
+import React from 'react';
 const hoursNumber = [
   { text: '0:00', value: 0 },
   { text: '0:30', value: 0.5 },

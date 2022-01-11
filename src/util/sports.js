@@ -1,3 +1,4 @@
+import React from 'react';
 const sportsSelect = [
   { nome: 'NENHUM ESPORTE', calorias: 0 },
   { nome: 'Musculação iniciante', calorias: 300 },

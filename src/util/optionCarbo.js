@@ -1,3 +1,4 @@
+import React from 'react';
 import { carbo } from './nutritionalTable';
 
 export const optionCarbo = carbo.map((carbo, ind) => {
