@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-/modelos site
+/modelos_site
 /.pnp
 .pnp.js
 
