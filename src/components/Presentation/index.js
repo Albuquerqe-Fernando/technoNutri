@@ -10,7 +10,12 @@ const Presentation = function () {
       <div className="anuncio" />
       <div className="conteiner_text">
         <div className="anuncio_mobile">
-          <iframe src="  https://www.trustedcpmrevenue.com/f9fmja3kfk?key=7ea97c471fdee53f637dd53210ff1ab6" />
+          <script
+            async="async"
+            data-cfasync="false"
+            src="//pl16911058.trustedcpmrevenue.com/5f1699090f4ebd589e5f54ba08209fae/invoke.js"
+          ></script>
+          <div id="container-5f1699090f4ebd589e5f54ba08209fae"></div>
         </div>
         <div className="consteiner_img_text">
           <img src={img1} alt="foto" />
