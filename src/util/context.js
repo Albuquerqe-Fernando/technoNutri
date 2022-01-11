@@ -6,7 +6,6 @@ import { globalState } from './data';
 export const Context = createContext();
 
 export const AppContext = ({ children }) => {
-  const Context = createContext();
   const [state, dispatch] = useReducer(reducer, globalState);
   return (
     <Context.Provider value={{ state, dispatch }}>{children}</Context.Provider>

@@ -14,7 +14,7 @@ const Ways = function () {
           <img src={imgEmagreciment} alt="emagrecimento" />
           <div>
             <h1>Aqui Está A Maneira Número Um De Emagrecer sem Sofrer</h1>
-            <Link href="/slimming">
+            <Link to="/slimming">
               <h2>
                 Você esta Pronto?
                 <br /> Clique Aqui
@@ -27,7 +27,7 @@ const Ways = function () {
           <img src={imgGanhoMassa} alt="ganho-massa" />
           <div>
             <h1>Descubra Hoje Mesmo Como Ganhar Musculos</h1>
-            <Link href="/gain-weight">
+            <Link to="/gain-weight">
               <h2>
                 Você esta Pronto?
                 <br /> Clique Aqui
