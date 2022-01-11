@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+import React, { createContext, useReducer } from 'react';
 import PropType from 'prop-types';
 import { reducer } from './reducer';
 import { globalState } from './data';
