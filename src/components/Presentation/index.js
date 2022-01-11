@@ -9,7 +9,9 @@ const Presentation = function () {
     <article className="conteiner">
       <div className="anuncio" />
       <div className="conteiner_text">
-        <div className="anuncio_mobile" />
+        <div className="anuncio_mobile">
+          <iframe src="  https://www.trustedcpmrevenue.com/f9fmja3kfk?key=7ea97c471fdee53f637dd53210ff1ab6" />
+        </div>
         <div className="consteiner_img_text">
           <img src={img1} alt="foto" />
           <h2>
@@ -27,7 +29,9 @@ const Presentation = function () {
             e fácil.
           </h2>
         </div>
-        <div className="anuncio_mobile" />
+        <div className="anuncio_mobile">
+          <iframe src="  https://www.trustedcpmrevenue.com/f9fmja3kfk?key=7ea97c471fdee53f637dd53210ff1ab6" />
+        </div>
       </div>
       <div className="anuncio" />
     </article>
