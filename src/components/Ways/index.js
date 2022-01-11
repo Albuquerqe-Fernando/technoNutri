@@ -3,6 +3,7 @@ import React from 'react';
 import './styled.css';
 import imgEmagreciment from '../../images/emagrecimento.jpg';
 import imgGanhoMassa from '../../images/massa.png';
+import { Link } from 'react-router-dom';
 
 const Ways = function () {
   return (
@@ -13,12 +14,12 @@ const Ways = function () {
           <img src={imgEmagreciment} alt="emagrecimento" />
           <div>
             <h1>Aqui Está A Maneira Número Um De Emagrecer sem Sofrer</h1>
-            <a href="/slimming">
+            <Link href="/slimming">
               <h2>
                 Você esta Pronto?
                 <br /> Clique Aqui
               </h2>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="anuncio_mobile_ways" />
@@ -26,12 +27,12 @@ const Ways = function () {
           <img src={imgGanhoMassa} alt="ganho-massa" />
           <div>
             <h1>Descubra Hoje Mesmo Como Ganhar Musculos</h1>
-            <a href="/gain-weight">
+            <Link href="/gain-weight">
               <h2>
                 Você esta Pronto?
                 <br /> Clique Aqui
               </h2>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
