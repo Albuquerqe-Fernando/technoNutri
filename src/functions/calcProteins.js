@@ -1,14 +1,22 @@
-const calcProteins = ({ basalDay }, objective) => {
-  if (objective === 'slim-down') {
-    const calcProteins = (basalDay * 35) / 100;
-    const proteins = calcProteins / 4;
+const calcProteins = ({ basalDay }, objective, weight) => {
+  if (objective === 'slim-down' && Number(basalDay) < 2500) {
+    const proteins = weight * 2.0;
 
     return Math.ceil(proteins);
   }
+  if (objective === 'slim-down' && Number(basalDay) >= 2500) {
+    const proteins = weight * 2.2;
 
-  if (objective === 'gain') {
-    const calcProteins = (basalDay * 25) / 100;
-    const proteins = calcProteins / 4;
+    return Math.ceil(proteins);
+  }
+  if (objective === 'gain' && Number(basalDay) < 2500) {
+    const proteins = weight * 1.8;
+
+    return Math.ceil(proteins);
+  }
+  if (objective === 'gain' && Number(basalDay) >= 2500) {
+    const proteins = weight * 2.0;
+
     return Math.ceil(proteins);
   }
 };

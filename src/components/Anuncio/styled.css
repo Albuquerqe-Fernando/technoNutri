@@ -1,18 +1,15 @@
 .anuncio {
-  width: 95%;
-  height: 100px;
   padding: 5px;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+iframe {
   border: none;
-  overflow: hidden;
 }
 .anuncio_250 {
-  width: 95%;
-  height: 250px;
   padding: 5px;
   margin: 0 auto;
-  text-align: center;
-  border: none;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }

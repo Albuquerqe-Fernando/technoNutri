@@ -12,8 +12,8 @@ const macros = (data, objective) => {
 
   const basalCalorie = basalExpense(data, objective);
 
-  const carbo = calcCarbo(basalCalorie, objective);
-  const proteins = calcProteins(basalCalorie, objective);
+  const carbo = calcCarbo(basalCalorie, objective, weight);
+  const proteins = calcProteins(basalCalorie, objective, weight);
   const fat = calcFat(basalCalorie);
   const Water = calcWater(weight);
 

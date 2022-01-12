@@ -19,7 +19,7 @@
   font-size: 25px;
   font-style: italic;
 }
-.footer a {
+.footer .insta {
   text-decoration: none;
   cursor: pointer;
   display: flex;
@@ -39,11 +39,12 @@
 
 @media screen and (max-width: 600px) {
   .footer {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
   }
 
-  .footer img {
-    max-width: 100%;
+  .footerImg img {
+    max-width: 150px;
     height: 80px;
   }
   .footer a p {
@@ -51,20 +52,21 @@
   }
   .privat_footer h2 {
     font-size: 1em;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
   .insta p {
     font-size: 0.7em;
   }
   .iconinsta {
     font-size: 25px;
-  }
-}
-@media screen and (max-width: 390px) {
-  .footer {
-    justify-content: space-around;
   }
   .footerImg {
     display: none;

@@ -16,6 +16,7 @@ import actions from '../../util/actions';
 import { handleDownload } from '../../functions/handles';
 import userData from '../../functions/userData';
 import Loandig from '../../components/Loandig';
+import { Anuncio320x50, Anuncio468x60 } from '../../components/Anuncio';
 
 const Result = function () {
   const [loandig, setloading] = useState(true);
@@ -28,11 +29,17 @@ const Result = function () {
   const { carbo, proteins, fat, Water, sleep } = macros(userDta[0], userDta[1]);
 
   const mealsAmount = amountMeals(sleep);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
     }, 6000);
   }, []);
+
   useEffect(() => {
     const divisionCarbo = Math.round(carbo / mealsAmount);
     const divisionProteins = Math.round(proteins / mealsAmount);
@@ -52,12 +59,16 @@ const Result = function () {
             <h1>Vamos criar seu diario alimentar </h1>
           </div>
           <section className="data_result">
-            <h2>Nome: {userDta[0].name}</h2>
+            <h2>
+              Nome: <p>{userDta[0].name}</p>
+            </h2>
             <h2>Idade: {userDta[0].age} </h2>
             <h2>Altura: {userDta[0].height}</h2>
             <h2>Peso: {userDta[0].weight}Kg</h2>
           </section>
+          <Anuncio320x50 />
           <WaterComponemt Water={Water} />
+          <Anuncio468x60 />
           <SleepComponemt sleep={sleep} />
           {!loandig && (
             <SelectDiet
@@ -67,6 +78,7 @@ const Result = function () {
               mealsAmount={mealsAmount}
             />
           )}
+          <Anuncio468x60 />
           <button
             className="button_download"
             type="button"

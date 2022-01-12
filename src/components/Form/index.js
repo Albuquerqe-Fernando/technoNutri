@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropType from 'prop-types';
 
@@ -10,6 +10,8 @@ import { sports } from '../../util/sports';
 import calcHours from '../../functions/calcHours';
 import { Context } from '../../util/context';
 import actions from '../../util/actions';
+import { Anuncio300x250, Anuncio468x60 } from '../Anuncio';
+import { Anuncio320x50 } from '../Anuncio';
 
 const Form = function ({ sex, objective }) {
   const navigate = useNavigate();
@@ -25,6 +27,10 @@ const Form = function ({ sex, objective }) {
   const [dormir, setDormir] = useState(22);
   const [calorieDay, setCalorieDay] = useState(250);
   const [calorietraining, setCalorieTraining] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const sleep = calcHours(acordar, dormir);
 
@@ -53,16 +59,8 @@ const Form = function ({ sex, objective }) {
 
   return (
     <div className="conteiner_form">
+      <Anuncio300x250 />
       <h1 className="title_form">Alguns dados para começarmos</h1>
-      <div className="anuncio_form">
-        <iframe
-          src="// www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
-          width="468"
-          height="60"
-          frameBorder="0"
-          scrolling="no"
-        ></iframe>
-      </div>
       <div className="conteiner_data">
         <main>
           <form onSubmit={handleSubmit}>
@@ -124,7 +122,7 @@ const Form = function ({ sex, objective }) {
               />
             </label> */}
             </section>
-            <div className="anuncio_form" />
+            <Anuncio320x50 />
             <section className="average_calorie">
               <h1>Como é seu dia?</h1>
               <label htmlFor="calorie-work">
@@ -145,7 +143,7 @@ const Form = function ({ sex, objective }) {
                   </option>
                 </select>
               </label>
-              <div className="anuncio_form" />
+              <Anuncio468x60 />
               <label htmlFor="calorie-training">
                 <h4>Você pratica algum esporte?</h4>
                 <select
@@ -160,7 +158,7 @@ const Form = function ({ sex, objective }) {
 
             <section className="conteiner_sleep">
               <h2>Como esta seu Sono? </h2>
-              <div className="anuncio_form" />
+              <Anuncio320x50 />
               <h4>Que horas aproximadamente você acorda</h4>
 
               <select
@@ -181,7 +179,6 @@ const Form = function ({ sex, objective }) {
 
             <button type="submit">Vamos lá!!</button>
           </form>
-          <div className="anuncio_form" />
         </main>
       </div>
     </div>
