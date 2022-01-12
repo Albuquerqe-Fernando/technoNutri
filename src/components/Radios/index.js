@@ -13,6 +13,7 @@ const Radios = function ({ objective }) {
 
   useEffect(() => {
     setTimeout(() => {
+      window.scrollTo(0, 0);
       setModal(true);
     }, 2000);
   }, []);
