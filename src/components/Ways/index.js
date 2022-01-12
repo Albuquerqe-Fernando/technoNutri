@@ -13,8 +13,6 @@ const Ways = function () {
         <div className="anuncio_mobile_ways">
           <iframe
             src="http//:www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
-            width="468"
-            height="60"
             frameBorder="0"
             scrolling="no"
           ></iframe>
@@ -35,11 +33,9 @@ const Ways = function () {
         <div className="anuncio_mobile_ways">
           <iframe
             src="http//:www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
-            width="468"
-            height="60"
             frameBorder="0"
             scrolling="no"
-          ></iframe>
+          />
         </div>
         <div className="ways">
           <img src={imgGanhoMassa} alt="ganho-massa" />
