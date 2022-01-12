@@ -1,0 +1,70 @@
+.conteiner_modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 70%;
+  text-align: center;
+  padding: 25px;
+  font-style: italic;
+  line-height: 50px;
+  background-color: #9244ca;
+  color: white;
+  border-radius: 15px;
+}
+.btn {
+  width: 30%;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #191970;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+  animation: progress-modal 2s infinite;
+}
+.btn:hover {
+  background-color: #5b5bf5;
+}
+
+@keyframes progress-modal {
+  0% {
+    background-color: #2f2fddf3;
+  }
+  50% {
+    background-color: #191970;
+  }
+  100% {
+    background-color: #2f2fddf3;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modal {
+    line-height: 35px;
+  }
+  .modal h1 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .modal {
+    width: 90%;
+    padding: 5px;
+  }
+  .modal {
+    line-height: 30px;
+  }
+
+  .modal h1 {
+    font-size: 1.2em;
+  }
+  .btn {
+    width: 50%;
+    font-size: 1.2em;
+  }
+}
