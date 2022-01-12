@@ -10,7 +10,15 @@ const Ways = function () {
   return (
     <main className="conteiner_ways">
       <section>
-        <div className="anuncio_mobile_ways" />
+        <div className="anuncio_mobile_ways">
+          <iframe
+            src="// www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
+            width="468"
+            height="60"
+            frameBorder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
 
         <div className="ways">
           <img src={imgEmagreciment} alt="emagrecimento" />
@@ -24,7 +32,15 @@ const Ways = function () {
             </Link>
           </div>
         </div>
-        <div className="anuncio_mobile_ways" />
+        <div className="anuncio_mobile_ways">
+          <iframe
+            src="// www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
+            width="468"
+            height="60"
+            frameBorder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
         <div className="ways">
           <img src={imgGanhoMassa} alt="ganho-massa" />
           <div>

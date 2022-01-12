@@ -14,7 +14,7 @@
   background-color: #4b0082;
 }
 .anuncio_mobile_ways {
-  width: 100%;
+  max-width: 90%;
   height: 60px;
   padding: 5px;
   background-color: white;

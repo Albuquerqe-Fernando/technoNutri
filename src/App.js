@@ -24,5 +24,3 @@ const App = function () {
 };
 
 export default App;
-
-//home/Notebook/techno-nutri/build

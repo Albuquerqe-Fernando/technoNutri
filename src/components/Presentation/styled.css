@@ -45,14 +45,6 @@
   flex-direction: row-reverse;
 }
 
-.anuncio {
-  padding: 5px;
-  background-color: white;
-}
-.anuncio_mobile {
-  display: none;
-}
-
 @media screen and (max-width: 900px) {
   .conteiner_text {
     text-align: center;
@@ -66,14 +58,8 @@
   .conteiner {
     display: block;
   }
-  .anuncio {
-    display: none;
-  }
+
   .conteiner_text {
     width: 100%;
-  }
-  .anuncio_mobile {
-    padding: 5px;
-    display: block;
   }
 }

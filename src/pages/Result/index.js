@@ -26,7 +26,6 @@ const Result = function () {
   const userDta = userData(data, objective, isValid);
 
   const { carbo, proteins, fat, Water, sleep } = macros(userDta[0], userDta[1]);
-  console.log(carbo, proteins);
 
   const mealsAmount = amountMeals(sleep);
   useEffect(() => {
@@ -49,7 +48,6 @@ const Result = function () {
       {loandig ? <Loandig /> : ''}
       <main className="conteiner_result">
         <div className="result">
-          <div className="anuncio_result" />
           <div className="title_result">
             <h1>Vamos criar seu diario alimentar </h1>
           </div>
@@ -59,11 +57,8 @@ const Result = function () {
             <h2>Altura: {userDta[0].height}</h2>
             <h2>Peso: {userDta[0].weight}Kg</h2>
           </section>
-          <div className="anuncio_result" />
           <WaterComponemt Water={Water} />
-          <div className="anuncio_result" />
           <SleepComponemt sleep={sleep} />
-          <div className="anuncio_result" />
           {!loandig && (
             <SelectDiet
               carbo={carbo}
@@ -72,7 +67,6 @@ const Result = function () {
               mealsAmount={mealsAmount}
             />
           )}
-          <div className="anuncio_result" />
           <button
             className="button_download"
             type="button"

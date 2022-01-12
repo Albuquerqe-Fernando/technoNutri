@@ -61,7 +61,7 @@ export const vegetables = [
   { name: 'Batata inglesa cozido', carbo: 17, glycemic: 61 },
   { name: 'Cenoura com beterraba', carbo: 15, glycemic: 51 },
 
-  { name: 'Inhame', carbo: 18, glycemic: 51 },
+  { name: 'Inhame', carbo: 20, glycemic: 51 },
   { name: 'Abóbora cozida', carbo: 11, glycemic: 64 },
 ];
 
