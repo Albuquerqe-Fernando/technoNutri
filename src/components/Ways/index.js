@@ -12,7 +12,7 @@ const Ways = function () {
       <section>
         <div className="anuncio_mobile_ways">
           <iframe
-            src="http//:www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
+            src="www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
             frameBorder="0"
             scrolling="no"
           ></iframe>
@@ -32,7 +32,7 @@ const Ways = function () {
         </div>
         <div className="anuncio_mobile_ways">
           <iframe
-            src="http//:www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
+            src="www.effectivedisplaycontent.com/watchnew?key=fec29dbebffcde2959861237fca1c4df "
             frameBorder="0"
             scrolling="no"
           />
