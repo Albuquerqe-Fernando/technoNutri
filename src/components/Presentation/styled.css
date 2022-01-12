@@ -46,8 +46,6 @@
 }
 
 .anuncio {
-  width: 20%;
-  height: 350px;
   padding: 5px;
   background-color: white;
 }
@@ -75,10 +73,7 @@
     width: 100%;
   }
   .anuncio_mobile {
-    width: 90%;
-    height: 15vh;
-    background-color: white;
-    margin: 10px auto;
+    padding: 5px;
     display: block;
   }
 }

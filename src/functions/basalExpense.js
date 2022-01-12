@@ -1,9 +1,9 @@
 const basalExpense = ({ weight, age, height, sex, calorie }, objective) => {
   if (sex === 'man') {
     const basal =
-      66 + (13, 7 * Number(weight)) + 5 * Number(height) - (6, 8 * Number(age));
+      10 * Number(weight) + 6.25 * Number(height) - 5 * Number(age) + 5;
     const totalDaySpent = basal + Number(calorie);
-    const percent = (totalDaySpent * 20) / 100;
+    const percent = (totalDaySpent * 0) / 100;
 
     if (objective === 'slim-down') {
       const basalDay = totalDaySpent - percent;
@@ -16,15 +16,13 @@ const basalExpense = ({ weight, age, height, sex, calorie }, objective) => {
   }
   if (sex === 'woman') {
     const basal =
-      65 +
-      (9, 6 * Number(weight)) +
-      (1, 8 * Number(height)) -
-      (4, 7 * Number(age));
+      10 * Number(weight) + 6.25 * Number(height) - 5 * Number(age) - 161;
     const totalDaySpent = basal + Number(calorie);
-    const percent = (totalDaySpent * 20) / 100;
+    const percent = (totalDaySpent * 10) / 100;
 
     if (objective === 'slim-down') {
       const basalDay = totalDaySpent - percent;
+
       return { basal, basalDay };
     }
     if (objective === 'gain') {

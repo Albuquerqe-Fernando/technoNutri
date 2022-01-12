@@ -7,7 +7,14 @@ import img2 from '../../images/text2.jpg';
 const Presentation = function () {
   return (
     <article className="conteiner">
-      <div className="anuncio" />
+      <div className="anuncio">
+        <script
+          async="async"
+          data-cfasync="false"
+          src="//pl16911058.trustedcpmrevenue.com/5f1699090f4ebd589e5f54ba08209fae/invoke.js"
+        ></script>
+        <div id="container-5f1699090f4ebd589e5f54ba08209fae"></div>
+      </div>
       <div className="conteiner_text">
         <div className="anuncio_mobile">
           <script
@@ -25,7 +32,14 @@ const Presentation = function () {
             onde começar.
           </h2>
         </div>
-        <div className="anuncio_mobile" />
+        <div className="anuncio_mobile">
+          <script
+            async="async"
+            data-cfasync="false"
+            src="//pl16911058.trustedcpmrevenue.com/5f1699090f4ebd589e5f54ba08209fae/invoke.js"
+          ></script>
+          <div id="container-5f1699090f4ebd589e5f54ba08209fae"></div>
+        </div>
         <div className="consteiner_img_text">
           <img src={img2} alt="foto2" />
           <h2>
@@ -35,10 +49,22 @@ const Presentation = function () {
           </h2>
         </div>
         <div className="anuncio_mobile">
-          <iframe src="  https://www.trustedcpmrevenue.com/f9fmja3kfk?key=7ea97c471fdee53f637dd53210ff1ab6" />
+          <script
+            async="async"
+            data-cfasync="false"
+            src="//pl16911058.trustedcpmrevenue.com/5f1699090f4ebd589e5f54ba08209fae/invoke.js"
+          ></script>
+          <div id="container-5f1699090f4ebd589e5f54ba08209fae"></div>
         </div>
       </div>
-      <div className="anuncio" />
+      <div className="anuncio">
+        <script
+          async="async"
+          data-cfasync="false"
+          src="//pl16911058.trustedcpmrevenue.com/5f1699090f4ebd589e5f54ba08209fae/invoke.js"
+        ></script>
+        <div id="container-5f1699090f4ebd589e5f54ba08209fae"></div>
+      </div>
     </article>
   );
 };

@@ -12,7 +12,7 @@ export const CalcSalad = (macro = 0, ingestMacro = 0) => {
 export const CalcEggs = (macro = 0, ingestMacro = 0) => {
   const result = Math.ceil(Number(ingestMacro) / Number(macro)) / 2;
   const resulttotal = result + 1;
-  return [result, resulttotal];
+  return [Math.ceil(result), Math.ceil(resulttotal)];
 };
 
 export const CalcCarbo = (macro = 0, vegetables = 0, ingestMacro = 0) => {

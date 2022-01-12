@@ -26,6 +26,7 @@ const Result = function () {
   const userDta = userData(data, objective, isValid);
 
   const { carbo, proteins, fat, Water, sleep } = macros(userDta[0], userDta[1]);
+  console.log(carbo, proteins);
 
   const mealsAmount = amountMeals(sleep);
   useEffect(() => {
