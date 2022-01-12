@@ -3,11 +3,13 @@ import React from 'react';
 import './styled.css';
 import img1 from '../../images/text1.jpg';
 import img2 from '../../images/text2.jpg';
+import { Anuncio300x250 } from '../Anuncio';
 
 const Presentation = function () {
   return (
     <article className="conteiner">
       <div className="conteiner_text">
+        <Anuncio300x250 />
         <div className="consteiner_img_text">
           <img src={img1} alt="foto" />
           <h2>
@@ -16,7 +18,7 @@ const Presentation = function () {
             onde começar.
           </h2>
         </div>
-
+        <Anuncio300x250 />
         <div className="consteiner_img_text">
           <img src={img2} alt="foto2" />
           <h2>

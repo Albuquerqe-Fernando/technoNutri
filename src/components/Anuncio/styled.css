@@ -1,6 +1,15 @@
 .anuncio {
   width: 95%;
-  height: 60px;
+  height: 100px;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  overflow: hidden;
+}
+.anuncio_250 {
+  width: 95%;
+  height: 250px;
   padding: 5px;
   margin: 0 auto;
   text-align: center;

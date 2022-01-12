@@ -4,14 +4,14 @@ import './styled.css';
 import imgEmagreciment from '../../images/emagrecimento.jpg';
 import imgGanhoMassa from '../../images/massa.png';
 import { Link } from 'react-router-dom';
-import Anuncio from '../Anuncio';
+import { Anuncio468x60 } from '../Anuncio';
 //import { advertsHorizont } from '../../util/adverts/adverts';
 
 const Ways = function () {
   return (
     <main className="conteiner_ways">
       <section>
-        <Anuncio />
+        <Anuncio468x60 />
         <div className="ways">
           <img src={imgEmagreciment} alt="emagrecimento" />
           <div>
@@ -24,7 +24,7 @@ const Ways = function () {
             </Link>
           </div>
         </div>
-        <Anuncio />
+        <Anuncio468x60 />
         <div className="ways">
           <img src={imgGanhoMassa} alt="ganho-massa" />
           <div>
