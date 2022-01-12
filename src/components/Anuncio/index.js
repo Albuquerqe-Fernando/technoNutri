@@ -2,13 +2,14 @@ import React from 'react';
 
 import './styled.css';
 
+const frame = (
+  <script
+    type="text/javascript"
+    src="http://www.effectivedisplaycontent.com/fec29dbebffcde2959861237fca1c4df/invoke.js"
+  ></script>
+);
 const Anuncio = () => {
-  return (
-    <script
-      type="text/javascript"
-      src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplaycontent.com/fec29dbebffcde2959861237fca1c4df/invoke.js"
-    ></script>
-  );
+  return <iframe src={frame} />;
 };
 
 export default Anuncio;
