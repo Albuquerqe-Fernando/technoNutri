@@ -145,7 +145,7 @@ const Form = function ({ sex, objective }) {
               </label>
               <Anuncio468x60 />
               <label htmlFor="calorie-training">
-                <h4>Você pratica algum esporte?</h4>
+                <h4>Você pratica algum Atividade física ?</h4>
                 <select
                   name="calorie-training"
                   value={calorietraining}

@@ -4,6 +4,8 @@ const sportsSelect = [
   { nome: 'Musculação iniciante', calorias: 300 },
   { nome: 'Musculação intermediario', calorias: 400 },
   { nome: 'Musculação avançado', calorias: 550 },
+  { nome: 'Crossfit 30minutos', calorias: 300 },
+  { nome: 'Crossfit 1hora', calorias: 500 },
   { nome: 'Futebol 30minutos', calorias: 270 },
   { nome: 'Futebol 1hora', calorias: 540 },
   { nome: 'Pular corda', calorias: 861 },
