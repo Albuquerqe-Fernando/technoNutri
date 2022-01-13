@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Context } from '../../util/context';
 
 import { GrDocumentPdf } from 'react-icons/gr';
@@ -17,8 +18,10 @@ import { handleDownload } from '../../functions/handles';
 import userData from '../../functions/userData';
 import Loandig from '../../components/Loandig';
 import { Anuncio320x50, Anuncio468x60 } from '../../components/Anuncio';
+import { toast } from 'react-toastify';
 
 const Result = function () {
+  const navegate = useNavigate();
   const [loandig, setloading] = useState(true);
   const {
     state: { data: data, objective, isValid },
@@ -48,6 +51,13 @@ const Result = function () {
     const macrosDivision = { divisionCarbo, divisionProteins, divisionFat };
     dispatch({ type: actions.DIVISION_MACROS, macrosDivision });
   }, [mealsAmount, carbo, proteins, fat, dispatch]);
+  const handleClick = () => {
+    handleDownload();
+    toast.success('Download Concluido');
+    setTimeout(() => {
+      navegate('/');
+    }, 3000);
+  };
 
   return (
     <>
@@ -82,7 +92,7 @@ const Result = function () {
           <button
             className="button_download"
             type="button"
-            onClick={handleDownload}
+            onClick={handleClick}
           >
             <h1>DOWNLOAD</h1>
             <GrDocumentPdf color="#4b0082" className="icon" />
