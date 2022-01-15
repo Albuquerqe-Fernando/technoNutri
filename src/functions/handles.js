@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import mealsValidator from '../validator/mealsValidator';
 import downloadMeals from './downloadMeals/downloadMeals';
 import filterMeals from './downloadMeals/filterMeals';
@@ -27,7 +28,7 @@ export const handleSalad = (e, setsalad) => {
   setsalad({ value: valueSalad, text: textSalad });
 };
 
-export const handleDownload = () => {
+export const handleDownload = (navegate) => {
   const meals = filterMeals();
 
   const isvalidFirst = mealsValidator(meals[0]);
@@ -52,4 +53,8 @@ export const handleDownload = () => {
   }
 
   downloadMeals(meals);
+  toast.success('Download Concluido');
+  setTimeout(() => {
+    navegate('/');
+  }, 3000);
 };

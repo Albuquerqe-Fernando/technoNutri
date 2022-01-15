@@ -7,6 +7,7 @@ import Gain from '../pages/Gain';
 import Slimming from '../pages/slimming';
 import Result from '../pages/Result';
 import Private from '../pages/Private';
+import Myroute from './Myroute';
 
 const Routers = function () {
   return (
@@ -14,7 +15,14 @@ const Routers = function () {
       <Route path="/" element={<Home />} />
       <Route path="/gain-weight" element={<Gain />} />
       <Route path="/slimming" element={<Slimming />} />
-      <Route path="/result" element={<Result />} />
+      <Route
+        path="/result"
+        element={
+          <Myroute>
+            <Result />
+          </Myroute>
+        }
+      />
       <Route path="/privat" element={<Private />} />
       <Route path="*" element={<Erro404 />} />
     </Routes>
