@@ -20,6 +20,7 @@ import {
   handlevegetable,
 } from '../../functions/handles';
 import { mealsDownload } from '../../functions/mealsDownload';
+import userData from '../../functions/userData';
 
 const DivSelect = ({ snack }) => {
   const [carbo, setCarbo] = useState({});
@@ -32,11 +33,13 @@ const DivSelect = ({ snack }) => {
   const [ingestVegetables, setIngestVegetables] = useState(0);
 
   const {
-    state: { data: data, macrosDivision },
+    state: { data: data, macrosDivision, objective, isValid },
   } = useContext(Context);
+  const useData = userData(data, objective, isValid);
+
   const { divisionCarbo, divisionProteins } = macrosDivision;
 
-  const { weight } = data;
+  const [{ weight }] = useData;
 
   const consumiCarbo = useMemo(
     () => CalcCarbo(carbo.value, vegetables.value, divisionCarbo),
@@ -114,8 +117,6 @@ const DivSelect = ({ snack }) => {
   useEffect(() => {
     mealsDownload.unshift(obj);
   }, [obj]);
-
-  //console.log(listDownload);
 
   return (
     <div className="conteinor_divs">

@@ -12,15 +12,15 @@ const validator = (data) => {
     toast.info('Nome precisa ter entre 1 e 40 caracteres.');
     isValid = false;
   }
-  if (age === 0 || age.length > 3) {
+  if (age.length < 2 || age.length > 3) {
     toast.info('Valor Idade Invalida.');
     isValid = false;
   }
-  if (weight === 0 || weight.length > 3) {
+  if (weight.length < 2 || weight.length > 3) {
     toast.info('Valor Peso Invalido.');
     isValid = false;
   }
-  if (height === 0 || height.length > 3) {
+  if (height.length < 3 || height.length > 3) {
     toast.info('Valor Altura Invalida.');
     isValid = false;
   }

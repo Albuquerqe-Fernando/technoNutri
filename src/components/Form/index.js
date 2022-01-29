@@ -25,7 +25,7 @@ const Form = function ({ sex, objective }) {
   // const [neck, setPescoco] = useState(0);
   const [acordar, setAcordar] = useState(5);
   const [dormir, setDormir] = useState(22);
-  const [calorieDay, setCalorieDay] = useState(250);
+  const [calorieDay, setCalorieDay] = useState(350);
   const [calorietraining, setCalorieTraining] = useState(0);
 
   useEffect(() => {
@@ -44,6 +44,7 @@ const Form = function ({ sex, objective }) {
     calorie,
     sleep,
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const isValid = validator(data);
@@ -68,6 +69,7 @@ const Form = function ({ sex, objective }) {
               <label htmlFor="nome">
                 <h3>Nome</h3>
                 <input
+                  autoComplete="off"
                   type="text"
                   placeholder="Seu Nome"
                   name="nome"
@@ -77,6 +79,7 @@ const Form = function ({ sex, objective }) {
               <label htmlFor="idade">
                 <h3>Idade</h3>
                 <input
+                  autoComplete="off"
                   type="number"
                   placeholder="Idade 99"
                   name="idade"
@@ -86,6 +89,7 @@ const Form = function ({ sex, objective }) {
               <label htmlFor="peso">
                 <h3>Peso</h3>
                 <input
+                  autoComplete="off"
                   type="number"
                   placeholder="Peso: ex= 100"
                   name="peso"
@@ -95,6 +99,7 @@ const Form = function ({ sex, objective }) {
               <label htmlFor="altura">
                 <h3>Altura</h3>
                 <input
+                  autoComplete="off"
                   type="number"
                   placeholder="Altura: ex= 175"
                   name="altura"
@@ -132,13 +137,13 @@ const Form = function ({ sex, objective }) {
                   value={calorieDay}
                   onChange={(e) => setCalorieDay(e.target.value)}
                 >
-                  <option value={250} key={1}>
+                  <option value={350} key={1}>
                     Baixo esforço físico
                   </option>
-                  <option value={500} key={2}>
+                  <option value={600} key={2}>
                     Medio esforço físico
                   </option>
-                  <option value={800} key={3}>
+                  <option value={900} key={3}>
                     Alto esforço físico
                   </option>
                 </select>

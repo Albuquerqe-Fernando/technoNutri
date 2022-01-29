@@ -8,8 +8,7 @@ class MyErrorBoundary extends Component {
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(err) {
-    console.log(err);
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 

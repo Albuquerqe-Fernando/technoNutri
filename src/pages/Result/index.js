@@ -26,9 +26,10 @@ const Result = function () {
     state: { data: data, objective, isValid },
     dispatch,
   } = useContext(Context);
-  const userDta = userData(data, objective, isValid);
 
-  const { carbo, proteins, fat, Water, sleep } = macros(userDta[0], userDta[1]);
+  const useData = userData(data, objective, isValid);
+
+  const { carbo, proteins, fat, Water, sleep } = macros(useData[0], useData[1]);
 
   const mealsAmount = amountMeals(sleep);
 
@@ -65,11 +66,11 @@ const Result = function () {
           </div>
           <section className="data_result">
             <h2>
-              Nome: <p>{userDta[0].name}</p>
+              Nome: <p>{useData[0].name}</p>
             </h2>
-            <h2>Idade: {userDta[0].age} </h2>
-            <h2>Altura: {userDta[0].height}</h2>
-            <h2>Peso: {userDta[0].weight}Kg</h2>
+            <h2>Idade: {useData[0].age} </h2>
+            <h2>Altura: {useData[0].height}</h2>
+            <h2>Peso: {useData[0].weight}Kg</h2>
           </section>
           <Anuncio320x50 />
           <WaterComponemt Water={Water} />

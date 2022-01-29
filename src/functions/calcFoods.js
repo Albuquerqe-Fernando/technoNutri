@@ -4,9 +4,10 @@ export const CalcProteins = (macro = 0, ingestMacro = 0) => {
   return Math.round(resulttotal);
 };
 
-export const CalcSalad = (macro = 0, ingestMacro = 0) => {
-  const result = Number(macro) / 10;
-  const resulttotal = result * Number(ingestMacro);
+export const CalcSalad = (salad = 0, weight = 0) => {
+  const result = Number(salad) / 10;
+  const resulttotal = result * Number(weight);
+
   return Math.round(resulttotal);
 };
 export const CalcEggs = (macro = 0, ingestMacro = 0) => {
