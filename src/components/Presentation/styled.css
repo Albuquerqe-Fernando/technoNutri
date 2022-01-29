@@ -63,3 +63,12 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 400px) {
+  .consteiner_img_text {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .consteiner_img_text img {
+    max-width: 90%;
+  }
+}

@@ -1,18 +1,20 @@
 export const CalcProteins = (macro = 0, ingestMacro = 0) => {
   const result = Number(ingestMacro) / Number(macro);
   const resulttotal = result * 100;
+
   return Math.round(resulttotal);
 };
 
-export const CalcSalad = (salad = 0, weight = 0) => {
+export const CalcSalad = (salad = 0, ingestMacro = 0) => {
   const result = Number(salad) / 10;
-  const resulttotal = result * Number(weight);
+  const resulttotal = result * Number(ingestMacro);
 
   return Math.round(resulttotal);
 };
 export const CalcEggs = (macro = 0, ingestMacro = 0) => {
   const result = Math.ceil(Number(ingestMacro) / Number(macro)) / 2;
   const resulttotal = result + 1;
+
   return [Math.ceil(result), Math.ceil(resulttotal)];
 };
 
